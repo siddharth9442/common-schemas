@@ -1,7 +1,7 @@
-import userSchema from "./src/user.schema.js";
-import stateSchema from "./src/state.schema.js";
+import UserSchema from "./src/user.schema.js";
+import StateSchema from "./src/state.schema.js";
 
 export {
-    stateSchema,
-    userSchema
+    StateSchema,
+    UserSchema
 };
