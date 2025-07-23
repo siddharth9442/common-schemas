@@ -17,6 +17,4 @@ const userSchema = new Schema({
     status: { type: Number, default: 1 } // 1: active, 9: soft delete
 }, { timestamps: true });
 
-const User = mongoose.model('User', userSchema);
-
-export default User;
+export const User = mongoose.model('User', userSchema);
