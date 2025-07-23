@@ -1,4 +1,4 @@
-import { Schema, Types } from 'mongoose';
+import mongoose, { Schema, Types } from 'mongoose';
 const userSchema = new Schema({
     // username: { type: String, required: true, lowercase: true, unique: true, trim: true, index: true },
     firstName: { type: String, required: true, uppercase: true, trim: true },
@@ -17,4 +17,4 @@ const userSchema = new Schema({
     status: { type: Number, default: 1 } // 1: active, 9: soft delete
 }, { timestamps: true });
 
-export default userSchema;
+export default User = mongoose.model('User', userSchema);
