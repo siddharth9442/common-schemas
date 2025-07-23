@@ -1,6 +1,5 @@
 import mongoose, { Schema, Types } from 'mongoose';
 const userSchema = new Schema({
-    // username: { type: String, required: true, lowercase: true, unique: true, trim: true, index: true },
     firstName: { type: String, required: true, uppercase: true, trim: true },
     lastName: { type: String, uppercase: true, trim: true },
     email: { type: String, lowercase: true, unique: true, trim: true, index: true },
