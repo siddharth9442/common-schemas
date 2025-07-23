@@ -4,4 +4,6 @@ const stateSchema = new Schema({
     status: { type: Number, default: 1 } // 1: active, 9: soft delete
 }, { timestamps: true });
 
-export default State = mongoose.model('State', stateSchema);
+const State = mongoose.model('State', stateSchema);
+
+export default State;
